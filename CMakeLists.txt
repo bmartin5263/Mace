@@ -10,10 +10,11 @@ add_compile_definitions(GLES_SILENCE_DEPRECATION)
 if (APPLE)
     include(cmake/AppleConfig.cmake)
 endif()
-if (ANDROID)
-    include(cmake/AndroidConfig.cmake)
-endif()
 
 project(Mace)
+
+if (Android)
+    include(cmake/AndroidConfig.cmake)
+endif()
 
 add_subdirectory(src)

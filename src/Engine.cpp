@@ -18,7 +18,10 @@ Engine::Engine() {
 }
 
 void Engine::run() {
+#ifdef MACE_IOS
     iosBridge->main();
+#elifndef MACE_ANDROID
+#endif
 }
 
 void Engine::update() {

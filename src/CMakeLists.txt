@@ -7,9 +7,12 @@ add_library(${FRAMEWORK_NAME} SHARED
         Renderer.h
 )
 
-if (APPLE)
+if (Android)
+    message(STATUS "Including Android Sources")
+    include(ndk/MaceNdk.cmake)
+elseif(APPLE)
     if (IOS)
-        message(STATUS "Including IOS Sources")
+        message(STATUS "Including iOS Sources")
         include(ios/MaceIos.cmake)
     endif()
 endif()
