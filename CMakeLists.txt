@@ -10,10 +10,8 @@ add_compile_definitions(GLES_SILENCE_DEPRECATION)
 if (APPLE)
     include(cmake/AppleConfig.cmake)
 endif()
-
 if (ANDROID)
-    message(STATUS "YES ANDROID")
-    add_compile_definitions(MACE_ANDROID)
+    include(cmake/AndroidConfig.cmake)
 endif()
 
 project(Mace)
