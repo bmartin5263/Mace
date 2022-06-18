@@ -1,6 +1,7 @@
-cmake_minimum_required (VERSION 3.14)
+cmake_minimum_required(VERSION 3.18)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake-modules/android/")
 
 if (APPLE)
     message(STATUS "YES APPLE")
@@ -16,14 +17,11 @@ if (ANDROID)
     add_compile_definitions(MACE_ANDROID)
 endif()
 
-#set(DEVELOPMENT_PROJECT_NAME "zircon.xcodeproj")                     # <== Set to your project name, e.g. project.xcodeproj
 set(DEVELOPMENT_TEAM_ID "839W3SDA39")                       # <== Set to your team ID from Apple
-#set(APP_NAME "Mace")                                     # <== Set To your app's name
-#set(APP_BUNDLE_IDENTIFIER "dev.bdon.zircon")                # <== Set to your app's bundle identifier
-set(FRAMEWORK_NAME "MaceFramework")                                # <== Set to your framework's name
-set(FRAMEWORK_BUNDLE_IDENTIFIER "dev.bdon.zirconframework")    # <== Set to your framework's bundle identifier (cannot be the same as app bundle identifier)
+set(FRAMEWORK_NAME "Mace")                                # <== Set to your framework's name
+set(FRAMEWORK_BUNDLE_IDENTIFIER "dev.bdon.mace")    # <== Set to your framework's bundle identifier (cannot be the same as app bundle identifier)
 set(TEST_NAME "Tests")                                      # <== Set to your test's name
-set(TEST_BUNDLE_IDENTIFIER "dev.bdon.tests")             # <== Set to your tests's bundle ID
+set(TEST_BUNDLE_IDENTIFIER "dev.bdon.mace.tests")             # <== Set to your tests's bundle ID
 set(CODE_SIGN_IDENTITY "iPhone Developer")                  # <== Set to your preferred code sign identity, to see list:
 # /usr/bin/env xcrun security find-identity -v -p codesigning
 set(DEPLOYMENT_TARGET 13.0)                                  # <== Set your deployment target version of iOS
