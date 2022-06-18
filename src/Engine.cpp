@@ -14,13 +14,15 @@ Engine::Engine() {
 #ifdef MACE_IOS
     iosBridge.reset(new IosBridge(this));
 #elifdef MACE_ANDROID
+    ndkBridge.reset(new NdkBridge);
 #endif
 }
 
 void Engine::run() {
 #ifdef MACE_IOS
     iosBridge->main();
-#elifndef MACE_ANDROID
+#elifdef MACE_ANDROID
+    ndkBridge->main();
 #endif
 }
 

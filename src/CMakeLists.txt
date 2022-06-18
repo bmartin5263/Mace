@@ -5,7 +5,7 @@ add_library(${FRAMEWORK_NAME} SHARED
         Engine.h
         Renderer.cpp
         Renderer.h
-)
+        Main.h)
 
 if (Android)
     message(STATUS "Including Android Sources")

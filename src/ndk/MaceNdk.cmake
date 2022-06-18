@@ -1,6 +1,13 @@
 include(AndroidNdkModules)
 android_ndk_import_module_native_app_glue()
 
+target_sources(${FRAMEWORK_NAME} PUBLIC
+        ${CMAKE_CURRENT_LIST_DIR}/gl3stub.h
+        ${CMAKE_CURRENT_LIST_DIR}/NdkBridge.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/NdkBridge.h
+)
+
+
 target_link_libraries(${FRAMEWORK_NAME} PUBLIC
         native_app_glue
         GLESv3

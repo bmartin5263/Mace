@@ -11,7 +11,7 @@
 #ifdef MACE_IOS
 #include "ios/IosBridge.h"
 #elifdef MACE_ANDROID
-class NdkBridge;
+#include "ndk/NdkBridge.h"
 #endif
 
 class Engine {
@@ -32,7 +32,7 @@ private:
 #ifdef MACE_IOS
     std::unique_ptr<IosBridge> iosBridge{nullptr};
 #elifdef MACE_ANDROID
-    std::unique_ptr<AndroidBridge> androidBridge{nullptr};
+    std::unique_ptr<NdkBridge> ndkBridge{nullptr};
 #endif
 
 };
