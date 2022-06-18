@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.18)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake-modules/android/")
+set(CMAKE_SHARED_LINKER_FLAGS "-Wall")
+
+add_compile_definitions(GLES_SILENCE_DEPRECATION)
 
 if (APPLE)
     message(STATUS "YES APPLE")
@@ -41,7 +44,7 @@ set(MACOSX_BUNDLE_ICON_FILE "")
 set(MACOSX_BUNDLE_LONG_VERSION_STRING "1.0")
 set(MACOSX_BUNDLE_SHORT_VERSION_STRING "1.0")
 set(MACOSX_BUNDLE_BUNDLE_VERSION "1.0")
-set(MACOSX_BUNDLE_COPYRIGHT "Copyright YOU")
+set(MACOSX_BUNDLE_COPYRIGHT "Copyright Brandon Martin")
 set(MACOSX_DEPLOYMENT_TARGET ${DEPLOYMENT_TARGET})
 
 # Build the C++ dynamically linked framework
