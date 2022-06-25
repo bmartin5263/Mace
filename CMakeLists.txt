@@ -1,11 +1,11 @@
-cmake_minimum_required(VERSION 3.18)
+cmake_minimum_required(VERSION 3.19)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/modules/android/")
 set(CMAKE_SHARED_LINKER_FLAGS "-Wall")
 set(FRAMEWORK_NAME "Mace")                                # <== Set to your framework's name
 
-add_compile_definitions(GLES_SILENCE_DEPRECATION)
+add_definitions(-DGLES_SILENCE_DEPRECATION)
 
 if (APPLE)
     include(cmake/AppleConfig.cmake)
@@ -17,4 +17,4 @@ if (Android)
     include(cmake/AndroidConfig.cmake)
 endif()
 
-add_subdirectory(src)
+add_subdirectory(core/src)

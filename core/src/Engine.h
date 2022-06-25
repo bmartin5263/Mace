@@ -12,11 +12,17 @@
 #include "ios/IosBridge.h"
 #elifdef MACE_ANDROID
 #include "ndk/NdkBridge.h"
+#include <android_native_app_glue.h>
 #endif
 
 class Engine {
 public:
+#ifdef MACE_IOS
     static void Launch();
+#elifdef MACE_ANDROID
+    static void Launch(struct android_app* app);
+    static android_app* androidApp;
+#endif
 
     Engine();
 

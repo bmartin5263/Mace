@@ -13,11 +13,9 @@
 
 #ifdef MACE_ANDROID
 #define MaceMain \
-android_app* MACE_ANDROID_APP = nullptr; \
 void android_main(struct android_app* app) { \
     app_dummy(); \
-    MACE_ANDROID_APP = app; \
-    Engine::Launch(); \
+    Engine::Launch(app); \
 }
 #else
 #define MACE_MAIN \

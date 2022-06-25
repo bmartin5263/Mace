@@ -1,14 +1,14 @@
 target_sources(${FRAMEWORK_NAME} PUBLIC
-        ${CMAKE_CURRENT_LIST_DIR}/IosBridge.mm
-        ${CMAKE_CURRENT_LIST_DIR}/IosBridge.h
-        ${CMAKE_CURRENT_LIST_DIR}/IosAppDelegate.mm
-        ${CMAKE_CURRENT_LIST_DIR}/IosAppDelegate.h
-        ${CMAKE_CURRENT_LIST_DIR}/IosSceneDelegate.mm
-        ${CMAKE_CURRENT_LIST_DIR}/IosSceneDelegate.h
-        ${CMAKE_CURRENT_LIST_DIR}/IosGLKViewController.mm
-        ${CMAKE_CURRENT_LIST_DIR}/IosGLKViewController.h
-        ${CMAKE_CURRENT_LIST_DIR}/IosGLKView.mm
-        ${CMAKE_CURRENT_LIST_DIR}/IosGLKView.h
+        IosBridge.mm
+        IosBridge.h
+        IosAppDelegate.mm
+        IosAppDelegate.h
+        IosSceneDelegate.mm
+        IosSceneDelegate.h
+        IosGLKViewController.mm
+        IosGLKViewController.h
+        IosGLKView.mm
+        IosGLKView.h
 )
 
 find_library(UIKIT UIKit)
@@ -32,7 +32,7 @@ set_target_properties(${FRAMEWORK_NAME} PROPERTIES
         FRAMEWORK TRUE
         FRAMEWORK_VERSION A
         MACOSX_FRAMEWORK_IDENTIFIER ${FRAMEWORK_BUNDLE_IDENTIFIER}
-        MACOSX_FRAMEWORK_INFO_PLIST ${CMAKE_CURRENT_LIST_DIR}/framework.plist.in
+        MACOSX_FRAMEWORK_INFO_PLIST framework.plist.in
         # "current version" in semantic format in Mach-O binary file
         VERSION 1.0.0
         # "compatibility version" in semantic format in Mach-O binary file
