@@ -5,6 +5,10 @@
 #include "Engine.h"
 
 #ifdef MACE_IOS
+#include "ios/IosBridge.h"
+#endif
+
+#ifdef MACE_IOS
 void Engine::Launch() {
     auto engine = new Engine;
     engine->run();

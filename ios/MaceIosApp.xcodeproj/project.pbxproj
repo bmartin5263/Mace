@@ -7,37 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA3EADA12867DA46007FFBF0 /* Mace.framework/Mace in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3EAD9E2867DA3F007FFBF0 /* Mace.framework/Mace */; };
 		CA65E6ED285E94440060440A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA65E6EC285E94440060440A /* Assets.xcassets */; };
 		CA65E6F0285E94440060440A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA65E6EE285E94440060440A /* LaunchScreen.storyboard */; };
 		CA65E6F3285E94440060440A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA65E6F2285E94440060440A /* main.mm */; };
 		CA65E703285E94AE0060440A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA65E702285E94AE0060440A /* UIKit.framework */; };
-		CA65E704285E94B00060440A /* Mace.framework/Mace in Frameworks */ = {isa = PBXBuildFile; fileRef = CA65E700285E94970060440A /* Mace.framework/Mace */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CA65E6FF285E94970060440A /* PBXContainerItemProxy */ = {
+		CA3EAD9D2867DA3F007FFBF0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CA65E6F9285E94970060440A /* Mace.xcodeproj */;
+			containerPortal = CA3EAD972867DA3F007FFBF0 /* Mace.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 843F9714B4DD4E33B1CD0E7B;
+			remoteGlobalIDString = 00943672B95D4532B6CCC491;
 			remoteInfo = Mace;
 		};
-		CA65E705285E94B20060440A /* PBXContainerItemProxy */ = {
+		CA3EAD9F2867DA44007FFBF0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CA65E6F9285E94970060440A /* Mace.xcodeproj */;
+			containerPortal = CA3EAD972867DA3F007FFBF0 /* Mace.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 3DA4C81448E84618A0FF0D0A;
+			remoteGlobalIDString = BFC84A5AFFB445DB8F2B8F15;
 			remoteInfo = Mace;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CA65E6DD285E94430060440A /* MaceIosAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaceIosAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA3EAD972867DA3F007FFBF0 /* Mace.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mace.xcodeproj; path = "../cmake-build-ios-debug/Mace.xcodeproj"; sourceTree = "<group>"; };
+		CA65E6DD285E94430060440A /* MaceIosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaceIosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA65E6EC285E94440060440A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA65E6EF285E94440060440A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA65E6F1285E94440060440A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA65E6F2285E94440060440A /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
-		CA65E6F9285E94970060440A /* Mace.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mace.xcodeproj; path = "../../Mace/cmake-build-ios-debug/Mace.xcodeproj"; sourceTree = "<group>"; };
 		CA65E702285E94AE0060440A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA65E704285E94B00060440A /* Mace.framework/Mace in Frameworks */,
+				CA3EADA12867DA46007FFBF0 /* Mace.framework/Mace in Frameworks */,
 				CA65E703285E94AE0060440A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,11 +54,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA3EAD982867DA3F007FFBF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA3EAD9E2867DA3F007FFBF0 /* Mace.framework/Mace */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CA65E6D4285E94430060440A = {
 			isa = PBXGroup;
 			children = (
-				CA65E6F9285E94970060440A /* Mace.xcodeproj */,
-				CA65E6DF285E94430060440A /* MaceIosAgain */,
+				CA3EAD972867DA3F007FFBF0 /* Mace.xcodeproj */,
+				CA65E6DF285E94430060440A /* MaceIosApp */,
 				CA65E6DE285E94430060440A /* Products */,
 				CA65E701285E94AD0060440A /* Frameworks */,
 			);
@@ -67,12 +75,12 @@
 		CA65E6DE285E94430060440A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA65E6DD285E94430060440A /* MaceIosAgain.app */,
+				CA65E6DD285E94430060440A /* MaceIosApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CA65E6DF285E94430060440A /* MaceIosAgain */ = {
+		CA65E6DF285E94430060440A /* MaceIosApp */ = {
 			isa = PBXGroup;
 			children = (
 				CA65E6EC285E94440060440A /* Assets.xcassets */,
@@ -80,15 +88,7 @@
 				CA65E6F1285E94440060440A /* Info.plist */,
 				CA65E6F2285E94440060440A /* main.mm */,
 			);
-			path = MaceIosAgain;
-			sourceTree = "<group>";
-		};
-		CA65E6FA285E94970060440A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CA65E700285E94970060440A /* Mace.framework/Mace */,
-			);
-			name = Products;
+			path = MaceIosApp;
 			sourceTree = "<group>";
 		};
 		CA65E701285E94AD0060440A /* Frameworks */ = {
@@ -102,9 +102,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CA65E6DC285E94430060440A /* MaceIosAgain */ = {
+		CA65E6DC285E94430060440A /* MaceIosApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA65E6F6285E94440060440A /* Build configuration list for PBXNativeTarget "MaceIosAgain" */;
+			buildConfigurationList = CA65E6F6285E94440060440A /* Build configuration list for PBXNativeTarget "MaceIosApp" */;
 			buildPhases = (
 				CA65E6D9285E94430060440A /* Sources */,
 				CA65E6DA285E94430060440A /* Frameworks */,
@@ -113,11 +113,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				CA65E706285E94B20060440A /* PBXTargetDependency */,
+				CA3EADA02867DA44007FFBF0 /* PBXTargetDependency */,
 			);
-			name = MaceIosAgain;
+			name = MaceIosApp;
 			productName = MaceIosAgain;
-			productReference = CA65E6DD285E94430060440A /* MaceIosAgain.app */;
+			productReference = CA65E6DD285E94430060440A /* MaceIosApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -134,7 +134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CA65E6D8285E94430060440A /* Build configuration list for PBXProject "MaceIosAgain" */;
+			buildConfigurationList = CA65E6D8285E94430060440A /* Build configuration list for PBXProject "MaceIosApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -147,24 +147,24 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = CA65E6FA285E94970060440A /* Products */;
-					ProjectRef = CA65E6F9285E94970060440A /* Mace.xcodeproj */;
+					ProductGroup = CA3EAD982867DA3F007FFBF0 /* Products */;
+					ProjectRef = CA3EAD972867DA3F007FFBF0 /* Mace.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				CA65E6DC285E94430060440A /* MaceIosAgain */,
+				CA65E6DC285E94430060440A /* MaceIosApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		CA65E700285E94970060440A /* Mace.framework/Mace */ = {
+		CA3EAD9E2867DA3F007FFBF0 /* Mace.framework/Mace */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			name = Mace.framework/Mace;
 			path = Mace.framework;
-			remoteRef = CA65E6FF285E94970060440A /* PBXContainerItemProxy */;
+			remoteRef = CA3EAD9D2867DA3F007FFBF0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -193,10 +193,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CA65E706285E94B20060440A /* PBXTargetDependency */ = {
+		CA3EADA02867DA44007FFBF0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Mace;
-			targetProxy = CA65E705285E94B20060440A /* PBXContainerItemProxy */;
+			targetProxy = CA3EAD9F2867DA44007FFBF0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -331,8 +331,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 839W3SDA39;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					MACE_IOS,
+				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MaceIosAgain/Info.plist;
+				INFOPLIST_FILE = MaceIosApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -342,7 +347,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.bdon.MaceIosAgain;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.bdon.MaceIosApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -360,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 839W3SDA39;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MaceIosAgain/Info.plist;
+				INFOPLIST_FILE = MaceIosApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -370,7 +375,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.bdon.MaceIosAgain;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.bdon.MaceIosApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,7 +386,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CA65E6D8285E94430060440A /* Build configuration list for PBXProject "MaceIosAgain" */ = {
+		CA65E6D8285E94430060440A /* Build configuration list for PBXProject "MaceIosApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA65E6F4285E94440060440A /* Debug */,
@@ -390,7 +395,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA65E6F6285E94440060440A /* Build configuration list for PBXNativeTarget "MaceIosAgain" */ = {
+		CA65E6F6285E94440060440A /* Build configuration list for PBXNativeTarget "MaceIosApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA65E6F7285E94440060440A /* Debug */,

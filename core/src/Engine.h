@@ -9,7 +9,7 @@
 #include "Renderer.h"
 
 #ifdef MACE_IOS
-#include "ios/IosBridge.h"
+class IosBridge;
 #elifdef MACE_ANDROID
 #include "ndk/NdkBridge.h"
 #include <android_native_app_glue.h>
