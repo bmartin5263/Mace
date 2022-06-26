@@ -4,11 +4,12 @@
 
 #include "NdkBridge.h"
 #include "../Engine.h"
+#include "../Log.h"
 
 NdkBridge::NdkBridge(android_app* androidApp, Engine* engine):
     androidApp(androidApp), engine(engine)
 {
-
+    LOGI("Hello, NdkBridge!");
 }
 
 void NdkBridge::initialize() {
@@ -22,7 +23,7 @@ void NdkBridge::onFrame() {
     android_poll_source *source;
 
     id = ALooper_pollAll(
-            hasFocus ? 0 : -1,
+            hasFocus() ? 0 : -1,
             nullptr,
             &events,
             (void **) &source
@@ -54,7 +55,7 @@ void NdkBridge::onFrame() {
 //            return false;
 //        }
         id = ALooper_pollAll(
-                hasFocus ? 0 : -1,
+                hasFocus() ? 0 : -1,
                 nullptr,
                 &events,
                 (void **) &source
@@ -73,6 +74,7 @@ void NdkBridge::OnAppCmd(android_app* appState, int32_t cmd) {
          * (or NULL).
          */
         case APP_CMD_INPUT_CHANGED:
+            LOGE("Input Changed");
             break;
 
             /**
@@ -81,6 +83,7 @@ void NdkBridge::OnAppCmd(android_app* appState, int32_t cmd) {
              * surface.
              */
         case APP_CMD_INIT_WINDOW:
+            LOGE("Init Window");
             self->hasWindow = true;
             break;
 
@@ -91,6 +94,7 @@ void NdkBridge::OnAppCmd(android_app* appState, int32_t cmd) {
              * it will be set to NULL.
              */
         case APP_CMD_TERM_WINDOW:
+            LOGE("Term Window");
             self->hasWindow = false;
             break;
 
@@ -122,7 +126,8 @@ void NdkBridge::OnAppCmd(android_app* appState, int32_t cmd) {
              * input focus.
              */
         case APP_CMD_GAINED_FOCUS:
-            self->hasFocus = true;
+            LOGE("Gain Focus");
+            self->setFocused(true);
             break;
 
             /**
@@ -130,7 +135,8 @@ void NdkBridge::OnAppCmd(android_app* appState, int32_t cmd) {
              * input focus.
              */
         case APP_CMD_LOST_FOCUS:
-            self->hasFocus = false;
+            LOGE("Lost Focus");
+            self->setFocused(false);
             break;
 
             /**

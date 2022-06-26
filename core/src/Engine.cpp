@@ -14,17 +14,22 @@ void Engine::Launch() {
     engine->run();
     delete engine;
 }
-#elifdef MACE_ANDROID
-void Engine::Launch(struct android_app *app) {
-
-}
 #endif
 
+#ifdef MACE_ANDROID
+android_app* Engine::androidApp = nullptr;
+void Engine::Launch(struct android_app *app) {
+    androidApp = app;
+    auto engine = new Engine;
+    engine->run();
+}
+#endif
 
 Engine::Engine() {
 #ifdef MACE_IOS
     iosBridge.reset(new IosBridge(this));
-#elifdef MACE_ANDROID
+#endif
+#ifdef MACE_ANDROID
     ndkBridge.reset(new NdkBridge(androidApp, this));
 #endif
 }
@@ -32,7 +37,8 @@ Engine::Engine() {
 void Engine::run() {
 #ifdef MACE_IOS
     iosBridge->main();
-#elifdef MACE_ANDROID
+#endif
+#ifdef MACE_ANDROID
     ndkBridge->initialize();
     while (true) {
         ndkBridge->onFrame();

@@ -10,7 +10,8 @@
 
 #ifdef MACE_IOS
 class IosBridge;
-#elifdef MACE_ANDROID
+#endif
+#ifdef MACE_ANDROID
 #include "ndk/NdkBridge.h"
 #include <android_native_app_glue.h>
 #endif
@@ -19,7 +20,9 @@ class Engine {
 public:
 #ifdef MACE_IOS
     static void Launch();
-#elifdef MACE_ANDROID
+#endif
+
+#ifdef MACE_ANDROID
     static void Launch(struct android_app* app);
     static android_app* androidApp;
 #endif
@@ -37,7 +40,8 @@ private:
     Renderer renderer;
 #ifdef MACE_IOS
     std::unique_ptr<IosBridge> iosBridge{nullptr};
-#elifdef MACE_ANDROID
+#endif
+#ifdef MACE_ANDROID
     std::unique_ptr<NdkBridge> ndkBridge{nullptr};
 #endif
 

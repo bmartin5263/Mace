@@ -3,6 +3,7 @@
 //
 
 #include <android_native_app_glue.h>
+#include "Main.h"
 //#include <android/log.h>
 //#include "OriginalEngine.h"
 //#include "CoreEngine.h"
@@ -14,12 +15,7 @@
  * android_native_app_glue.  It runs in its own thread, with its own
  * event loop for receiving input events and doing other things.
  */
-void android_main(android_app* app) {
-//    WARN("Application Starting");
-//
-//    mace::CoreEngine::Init(app);
-//    mace::CoreEngine::Launch();
-//
-//    OriginalEngine engine{app};
-//    engine.run();
-}
+ MACE_MAIN
+//void android_main(android_app* app) {
+//  Engine::Launch(app);
+//}

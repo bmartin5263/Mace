@@ -22,12 +22,15 @@ public:
 
     void onFrame();
 
+    void setFocused(bool value) { this->focused = value; }
+    [[nodiscard]] bool hasFocus() const { return focused; }
+
 private:
     android_app* androidApp;
     Engine* engine;
 
     bool hasWindow{false};
-    bool hasFocus{false};
+    bool focused{false};
 };
 
 

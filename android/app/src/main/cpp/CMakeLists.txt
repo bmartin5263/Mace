@@ -14,11 +14,15 @@
 # limitations under the License.
 #
 
-cmake_minimum_required(VERSION 3.19)
+cmake_minimum_required(VERSION 3.21)
 project(SpacegameActivity LANGUAGES C CXX)
 
-include(AndroidNdkModules.cmake)
-android_ndk_import_module_native_app_glue()
+add_compile_definitions(MACE_ANDROID)
+
+add_subdirectory("../../../../../core/src" "android-build")
+
+#include(AndroidNdkModules.cmake)
+#android_ndk_import_module_native_app_glue()
 
 # set up common compile options
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -fno-exceptions -frtti")
@@ -44,6 +48,7 @@ set_target_properties(${PROJECT_NAME}
 
 # add lib dependencies
 target_link_libraries(${PROJECT_NAME} PUBLIC
+        Mace
         native_app_glue
         GLESv3
         EGL

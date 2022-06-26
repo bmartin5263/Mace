@@ -12,9 +12,8 @@
 #endif
 
 #ifdef MACE_ANDROID
-#define MaceMain \
+#define MACE_MAIN \
 void android_main(struct android_app* app) { \
-    app_dummy(); \
     Engine::Launch(app); \
 }
 #else

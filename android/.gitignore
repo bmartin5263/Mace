@@ -322,3 +322,5 @@ obj/
 
 # End of https://www.toptal.com/developers/gitignore/api/androidstudio,android,c++,java,intellij
 /.gradle/
+
+android-build/
