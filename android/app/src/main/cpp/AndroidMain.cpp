@@ -3,11 +3,11 @@
 //
 
 #include <android_native_app_glue.h>
-#include <android/log.h>
-#include "OriginalEngine.h"
-#include "CoreEngine.h"
-#include "Game.h"
-#include "Log.h"
+//#include <android/log.h>
+//#include "OriginalEngine.h"
+//#include "CoreEngine.h"
+//#include "Game.h"
+//#include "Log.h"
 
 /**
  * This is the main entry point of a native application that is using
@@ -15,11 +15,11 @@
  * event loop for receiving input events and doing other things.
  */
 void android_main(android_app* app) {
-    WARN("Application Starting");
-
-    mace::CoreEngine::Init(app);
-    mace::CoreEngine::Launch();
-
-    OriginalEngine engine{app};
-    engine.run();
+//    WARN("Application Starting");
+//
+//    mace::CoreEngine::Init(app);
+//    mace::CoreEngine::Launch();
+//
+//    OriginalEngine engine{app};
+//    engine.run();
 }

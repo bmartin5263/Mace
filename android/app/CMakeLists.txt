@@ -17,6 +17,9 @@
 cmake_minimum_required(VERSION 3.4.1)
 project(SpacegameActivity LANGUAGES C CXX)
 
+include(AndroidNdkModules)
+android_ndk_import_module_native_app_glue()
+
 # set up common compile options
 set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wall -Werror -fno-exceptions -frtti")
 
@@ -54,4 +57,11 @@ set_target_properties(${PROJECT_NAME}
   PROPERTIES  LINK_FLAGS "-u ANativeActivity_onCreate")
 
 # add lib dependencies
-target_link_libraries(${PROJECT_NAME} PUBLIC game engine native_app_glue)
+target_link_libraries(${PROJECT_NAME} PUBLIC
+        native_app_glue
+        GLESv3
+        EGL
+        log
+        android
+        atomic
+)
