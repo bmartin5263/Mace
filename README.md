@@ -1,3 +1,3 @@
 # Mace
 
->> Cross-platform C++ Game Engine
+> Cross-platform C++ Game Engine
