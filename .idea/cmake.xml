@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSharedSettings">
+    <configurations>
+      <configuration PROFILE_NAME="iOS Debug" ENABLED="true" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCMAKE_TOOLCHAIN_FILE=./ios/ios-toolchain.cmake -DCMAKE_SYSTEM_NAME=iOS -DPLATFORM=SIMULATORARM64 -H. -GXcode" />
+      <configuration PROFILE_NAME="Android Debug" ENABLED="true" CONFIG_NAME="Debug" TOOLCHAIN_NAME="Android aarch64" GENERATION_OPTIONS="-G Ninja -DCMAKE_SYSTEM_NAME=Android -DCMAKE_TOOLCHAIN_FILE=~/Library/Android/sdk/ndk/21.4.7075529/build/cmake/android.toolchain.cmake -DANDROID_ABI=arm64-v8a -DANDROID_PLATFORM=android-24 -DANDROID_NDK=/Users/brandon/Library/Android/sdk/ndk/21.4.7075529" />
+    </configurations>
+  </component>
+</project>
