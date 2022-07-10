@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA3EADA12867DA46007FFBF0 /* Mace.framework/Mace in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3EAD9E2867DA3F007FFBF0 /* Mace.framework/Mace */; };
+		CA5A72DD2879FA5600252F90 /* Mace.framework/Mace in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5A72DA2879FA4700252F90 /* Mace.framework/Mace */; };
 		CA65E6ED285E94440060440A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA65E6EC285E94440060440A /* Assets.xcassets */; };
 		CA65E6F0285E94440060440A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA65E6EE285E94440060440A /* LaunchScreen.storyboard */; };
 		CA65E6F3285E94440060440A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA65E6F2285E94440060440A /* main.mm */; };
@@ -15,24 +15,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CA3EAD9D2867DA3F007FFBF0 /* PBXContainerItemProxy */ = {
+		CA5A72D92879FA4700252F90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CA3EAD972867DA3F007FFBF0 /* Mace.xcodeproj */;
+			containerPortal = CA5A72D32879FA4700252F90 /* Mace.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 00943672B95D4532B6CCC491;
+			remoteGlobalIDString = 1042949DC32A46FAA2458A79;
 			remoteInfo = Mace;
 		};
-		CA3EAD9F2867DA44007FFBF0 /* PBXContainerItemProxy */ = {
+		CA5A72DB2879FA5200252F90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CA3EAD972867DA3F007FFBF0 /* Mace.xcodeproj */;
+			containerPortal = CA5A72D32879FA4700252F90 /* Mace.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = BFC84A5AFFB445DB8F2B8F15;
+			remoteGlobalIDString = 1EC7393A2B0544E8ACF943DD;
 			remoteInfo = Mace;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CA3EAD972867DA3F007FFBF0 /* Mace.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mace.xcodeproj; path = "../cmake-build-ios-debug/Mace.xcodeproj"; sourceTree = "<group>"; };
+		CA5A72D32879FA4700252F90 /* Mace.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mace.xcodeproj; path = "../core/src/cmake-build-ios-debug/Mace.xcodeproj"; sourceTree = "<group>"; };
 		CA65E6DD285E94430060440A /* MaceIosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaceIosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA65E6EC285E94440060440A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA65E6EF285E94440060440A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA3EADA12867DA46007FFBF0 /* Mace.framework/Mace in Frameworks */,
+				CA5A72DD2879FA5600252F90 /* Mace.framework/Mace in Frameworks */,
 				CA65E703285E94AE0060440A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,10 +54,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CA3EAD982867DA3F007FFBF0 /* Products */ = {
+		CA5A72D42879FA4700252F90 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA3EAD9E2867DA3F007FFBF0 /* Mace.framework/Mace */,
+				CA5A72DA2879FA4700252F90 /* Mace.framework/Mace */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,7 +65,7 @@
 		CA65E6D4285E94430060440A = {
 			isa = PBXGroup;
 			children = (
-				CA3EAD972867DA3F007FFBF0 /* Mace.xcodeproj */,
+				CA5A72D32879FA4700252F90 /* Mace.xcodeproj */,
 				CA65E6DF285E94430060440A /* MaceIosApp */,
 				CA65E6DE285E94430060440A /* Products */,
 				CA65E701285E94AD0060440A /* Frameworks */,
@@ -113,7 +113,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				CA3EADA02867DA44007FFBF0 /* PBXTargetDependency */,
+				CA5A72DC2879FA5200252F90 /* PBXTargetDependency */,
 			);
 			name = MaceIosApp;
 			productName = MaceIosAgain;
@@ -147,8 +147,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = CA3EAD982867DA3F007FFBF0 /* Products */;
-					ProjectRef = CA3EAD972867DA3F007FFBF0 /* Mace.xcodeproj */;
+					ProductGroup = CA5A72D42879FA4700252F90 /* Products */;
+					ProjectRef = CA5A72D32879FA4700252F90 /* Mace.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -159,12 +159,12 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		CA3EAD9E2867DA3F007FFBF0 /* Mace.framework/Mace */ = {
+		CA5A72DA2879FA4700252F90 /* Mace.framework/Mace */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			name = Mace.framework/Mace;
 			path = Mace.framework;
-			remoteRef = CA3EAD9D2867DA3F007FFBF0 /* PBXContainerItemProxy */;
+			remoteRef = CA5A72D92879FA4700252F90 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -193,10 +193,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CA3EADA02867DA44007FFBF0 /* PBXTargetDependency */ = {
+		CA5A72DC2879FA5200252F90 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Mace;
-			targetProxy = CA3EAD9F2867DA44007FFBF0 /* PBXContainerItemProxy */;
+			targetProxy = CA5A72DB2879FA5200252F90 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
