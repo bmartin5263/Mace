@@ -19,7 +19,7 @@ project(SpacegameActivity LANGUAGES C CXX)
 
 add_compile_definitions(MACE_ANDROID)
 
-add_subdirectory("../../../../../core/src" "android-build")
+add_subdirectory("../../../../.." "android-build")
 
 #include(AndroidNdkModules.cmake)
 #android_ndk_import_module_native_app_glue()
